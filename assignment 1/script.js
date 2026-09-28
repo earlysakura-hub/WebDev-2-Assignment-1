@@ -14,13 +14,13 @@ function createConverter(fromUnit, toUnit) {
         }
         if(fromUnit === "c" && toUnit === "f"){
             if(Array.isArray(value)){
-                return value.map((item)=>item*2.20462);
+                return value.map((item)=>(item * (9 / 5)) + 32);
             }
             return (value * (9 / 5)) + 32;
         }
         if(fromUnit === "f" && toUnit === "c"){
             if(Array.isArray(value)){
-                return value.map((item)=>item/2.20462);
+                return value.map((item)=>(item - 32) * (5 / 9));
             }
             return (value - 32) * (5 / 9);
         }
