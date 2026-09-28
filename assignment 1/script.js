@@ -1,3 +1,15 @@
+/*
+Names: Lin Shi, Adeeb Farzi, Xzander Perez
+Date: September 28, 2026
+
+This program converts weight, distance, and temperature between metric and imperial units.
+The user can enter either a single value or a comma-separated list of values as input.
+The program processes the input using a higher-order JavaScript function that returns the appropriate conversion function.
+It supports kilograms and pounds, kilometres and miles, and Celsius and Fahrenheit in both directions.
+The converted result or list of results is displayed on the webpage.
+*/
+
+
 function createConverter(fromUnit, toUnit) {
     return (value) => {
         if (fromUnit === "kg" && toUnit === "lb") {
