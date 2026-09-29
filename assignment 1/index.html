@@ -22,7 +22,7 @@
             Convert between metric and imperial units.
         </p>
 
-        <nav class="flex items-center gap-4 mt-6">
+        <nav class="flex flex-wrap items-center gap-4 mt-6">
 
             <button id="nav-weight"
                 onclick="switchTab('weight')"
@@ -57,59 +57,64 @@
                 Convert between kilograms and pounds.
             </p>
 
-            <div class="mt-5">
+            <form>
 
-                <label for="weight-direction"
-                    class="block text-sm font-medium text-slate-700 mb-2">
-                    Conversion Direction
-                </label>
+                <div class="mt-5">
 
-                <select id="weight-direction"
-                    class="w-full border border-slate-300 rounded-lg px-4 py-2">
+                    <label for="weight-direction"
+                        class="block text-sm font-medium text-slate-700 mb-2">
+                        Conversion Direction
+                    </label>
 
-                    <option value="kg-lb">
-                        Kilograms to Pounds
-                    </option>
+                    <select id="weight-direction"
+                        class="w-full border border-slate-300 rounded-lg px-4 py-2">
 
-                    <option value="lb-kg">
-                        Pounds to Kilograms
-                    </option>
+                        <option value="kg-lb">
+                            Kilograms to Pounds
+                        </option>
 
-                </select>
+                        <option value="lb-kg">
+                            Pounds to Kilograms
+                        </option>
 
-            </div>
+                    </select>
 
-            <div class="mt-5">
+                </div>
 
-                <label for="weight-input"
-                    class="block text-sm font-medium text-slate-700 mb-2">
-                    Value
-                </label>
+                <div class="mt-5">
 
-                <input id="weight-input"
-                    type="text"
-                    class="w-full border border-slate-300 rounded-lg px-4 py-2"
-                    placeholder="Enter a value">
+                    <label for="weight-input"
+                        class="block text-sm font-medium text-slate-700 mb-2">
+                        Value
+                    </label>
 
-            </div>
+                    <input id="weight-input"
+                        type="text"
+                        class="w-full border border-slate-300 rounded-lg px-4 py-2"
+                        placeholder="Enter a value">
 
-            <button id="weight-convert"
-                class="w-full bg-blue-600 text-white px-4 py-2 rounded-lg mt-5 hover:bg-blue-700 transition cursor-pointer">
-                Convert
-            </button>
+                </div>
 
-            <div class="mt-5 bg-slate-100 rounded-lg p-4">
+                <button id="weight-convert"
+                    type="button"
+                    class="w-full bg-blue-600 text-white px-4 py-2 rounded-lg mt-5 hover:bg-blue-700 transition cursor-pointer">
+                    Convert
+                </button>
 
-                <p class="text-sm text-slate-500">
-                    Result
-                </p>
+                <div class="mt-5 bg-slate-100 rounded-lg p-4">
 
-                <p id="weight-result"
-                    class="text-2xl font-bold text-blue-600 mt-1">
-                    --
-                </p>
+                    <p class="text-sm text-slate-500">
+                        Result
+                    </p>
 
-            </div>
+                    <p id="weight-result"
+                        class="text-2xl font-bold text-blue-600 mt-1">
+                        --
+                    </p>
+
+                </div>
+
+            </form>
 
         </section>
 
@@ -123,62 +128,67 @@
             </h2>
 
             <p class="text-sm text-slate-500 mt-1">
-                Convert between Miles and Kilometers.
+                Convert between miles and kilometres.
             </p>
 
-            <div class="mt-5">
+            <form>
 
-                <label for="distance-direction"
-                    class="block text-sm font-medium text-slate-700 mb-2">
-                    Conversion Direction
-                </label>
+                <div class="mt-5">
 
-                <select id="distance-direction"
-                    class="w-full border border-slate-300 rounded-lg px-4 py-2">
+                    <label for="distance-direction"
+                        class="block text-sm font-medium text-slate-700 mb-2">
+                        Conversion Direction
+                    </label>
 
-                    <option value="km-mi">
-                        Kilometers to Miles
-                    </option>
+                    <select id="distance-direction"
+                        class="w-full border border-slate-300 rounded-lg px-4 py-2">
 
-                    <option value="mi-km">
-                        Miles to Kilometers
-                    </option>
+                        <option value="km-mi">
+                            Kilometres to Miles
+                        </option>
 
-                </select>
+                        <option value="mi-km">
+                            Miles to Kilometres
+                        </option>
 
-            </div>
+                    </select>
 
-            <div class="mt-5">
+                </div>
 
-                <label for="distance-input"
-                    class="block text-sm font-medium text-slate-700 mb-2">
-                    Value
-                </label>
+                <div class="mt-5">
 
-                <input id="distance-input"
-                    type="text"
-                    class="w-full border border-slate-300 rounded-lg px-4 py-2"
-                    placeholder="Enter a value">
+                    <label for="distance-input"
+                        class="block text-sm font-medium text-slate-700 mb-2">
+                        Value
+                    </label>
 
-            </div>
+                    <input id="distance-input"
+                        type="text"
+                        class="w-full border border-slate-300 rounded-lg px-4 py-2"
+                        placeholder="Enter a value">
 
-            <button id="distance-convert"
-                class="w-full bg-blue-600 text-white px-4 py-2 rounded-lg mt-5 hover:bg-blue-700 transition cursor-pointer">
-                Convert
-            </button>
+                </div>
 
-            <div class="mt-5 bg-slate-100 rounded-lg p-4">
+                <button id="distance-convert"
+                    type="button"
+                    class="w-full bg-blue-600 text-white px-4 py-2 rounded-lg mt-5 hover:bg-blue-700 transition cursor-pointer">
+                    Convert
+                </button>
 
-                <p class="text-sm text-slate-500">
-                    Result
-                </p>
+                <div class="mt-5 bg-slate-100 rounded-lg p-4">
 
-                <p id="distance-result"
-                    class="text-2xl font-bold text-blue-600 mt-1">
-                    --
-                </p>
+                    <p class="text-sm text-slate-500">
+                        Result
+                    </p>
 
-            </div>
+                    <p id="distance-result"
+                        class="text-2xl font-bold text-blue-600 mt-1">
+                        --
+                    </p>
+
+                </div>
+
+            </form>
 
         </section>
 
@@ -195,59 +205,64 @@
                 Convert between Celsius and Fahrenheit.
             </p>
 
-            <div class="mt-5">
+            <form>
 
-                <label for="temp-direction"
-                    class="block text-sm font-medium text-slate-700 mb-2">
-                    Conversion Direction
-                </label>
+                <div class="mt-5">
 
-                <select id="temp-direction"
-                    class="w-full border border-slate-300 rounded-lg px-4 py-2">
+                    <label for="temp-direction"
+                        class="block text-sm font-medium text-slate-700 mb-2">
+                        Conversion Direction
+                    </label>
 
-                    <option value="c-f">
-                        Celsius to Fahrenheit
-                    </option>
+                    <select id="temp-direction"
+                        class="w-full border border-slate-300 rounded-lg px-4 py-2">
 
-                    <option value="f-c">
-                        Fahrenheit to Celsius
-                    </option>
+                        <option value="c-f">
+                            Celsius to Fahrenheit
+                        </option>
 
-                </select>
+                        <option value="f-c">
+                            Fahrenheit to Celsius
+                        </option>
 
-            </div>
+                    </select>
 
-            <div class="mt-5">
+                </div>
 
-                <label for="temp-input"
-                    class="block text-sm font-medium text-slate-700 mb-2">
-                    Value
-                </label>
+                <div class="mt-5">
 
-                <input id="temp-input"
-                    type="text"
-                    class="w-full border border-slate-300 rounded-lg px-4 py-2"
-                    placeholder="Enter a value">
+                    <label for="temp-input"
+                        class="block text-sm font-medium text-slate-700 mb-2">
+                        Value
+                    </label>
 
-            </div>
+                    <input id="temp-input"
+                        type="text"
+                        class="w-full border border-slate-300 rounded-lg px-4 py-2"
+                        placeholder="Enter a value">
 
-            <button id="temp-convert"
-                class="w-full bg-purple-600 text-white px-4 py-2 rounded-lg mt-5 hover:bg-purple-700 transition cursor-pointer">
-                Convert
-            </button>
+                </div>
 
-            <div class="mt-5 bg-slate-100 rounded-lg p-4">
+                <button id="temp-convert"
+                    type="button"
+                    class="w-full bg-purple-600 text-white px-4 py-2 rounded-lg mt-5 hover:bg-purple-700 transition cursor-pointer">
+                    Convert
+                </button>
 
-                <p class="text-sm text-slate-500">
-                    Result
-                </p>
+                <div class="mt-5 bg-slate-100 rounded-lg p-4">
 
-                <p id="temp-result"
-                    class="text-2xl font-bold text-purple-600 mt-1">
-                    --
-                </p>
+                    <p class="text-sm text-slate-500">
+                        Result
+                    </p>
 
-            </div>
+                    <p id="temp-result"
+                        class="text-2xl font-bold text-purple-600 mt-1">
+                        --
+                    </p>
+
+                </div>
+
+            </form>
 
         </section>
 
